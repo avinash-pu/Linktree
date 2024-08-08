@@ -10,7 +10,7 @@ const authRoutes = require('./src/routes/authRoutes');
 const corsOptions = {
     origin: '*',  
     Credential: true,
-    methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
+    methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE","OPTIONS"],
     allowedHeaders: 'Content-Type, Authorization',
 };
 const app = express();
