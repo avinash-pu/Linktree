@@ -1,0 +1,27 @@
+/* Center the container vertically and horizontally */
+.welcome-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f8ff; /* Background color */
+  }
+  
+  .welcome-message {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* Message background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .welcome-message h1 {
+    font-size: 2em;
+    color: #4a90e2; /* Heading color */
+  }
+  
+  .welcome-message p {
+    font-size: 1.2em;
+    color: #333; /* Text color */
+  }
+  
