@@ -176,7 +176,11 @@ const HeroSection = () => {
         <div className="flags-container fade-in">  
           <img src={sixthImg} alt="flag" /> 
           <p>We acknowledge the Traditional Custodians of the land on which our office stands, The Wurundjeri people of the Kulin Nation, and pay our respects to Elders past, present and emerging. Linktree Pty Ltd (ABN 68 608 721 562), 1-9 Sackville St, Collingwood VIC 3066</p>
-        </div>  
+        </div> 
+        <div className="footer2">
+      <p>&copy; 2024 Avinash Kumar. All rights reserved.</p>
+    </div>
+
       </section>
     </div>
   );

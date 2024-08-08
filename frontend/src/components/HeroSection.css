@@ -394,3 +394,9 @@ text-align: justify;
   width: 40px;   
   margin: 0 10px;   
 }
+.footer2 {
+  text-align: center;
+  padding: 20px;
+  background-color: #df1010;
+  color: white;
+}
