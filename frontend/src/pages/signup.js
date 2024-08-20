@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './signup.css';
 import Img from '../Asset/Images/log in.png';
-import { API_URL } from '../util'; // Adjust the path if necessary
+import { API_URL } from '../util'; 
 
 const Signup = () => {
     const [successMessage, setSuccessMessage] = useState('');
@@ -21,16 +21,13 @@ const Signup = () => {
         try {
             const response = await axios.post(`${API_URL}/api/auth/register`, values);
             console.log('Signup successful:', response.data);
-            // Set success message and show the login button
             setSuccessMessage('Signup successful! Please log in.');
             setShowLoginButton(true);
         } catch (error) {
             console.error('Error during signup:', error);
             if (error.response && error.response.data) {
-                // Display backend error message if available
                 setErrors({ submit: error.response.data.message || 'Failed to sign up. Please try again.' });
             } else {
-                // Display generic error message
                 setErrors({ submit: 'Failed to sign up. Please try again.' });
             }
         } finally {
@@ -39,7 +36,7 @@ const Signup = () => {
     };
 
     const handleLoginClick = () => {
-        navigate('/login'); // Adjust the path if necessary
+        navigate('/login'); 
     };
 
     return (

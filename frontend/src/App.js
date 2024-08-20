@@ -28,7 +28,7 @@ function App() {
 
 function HeaderWithConditionalRendering() {
   const location = useLocation();
-  const hideHeaderPaths = ['/dashboard']; // List paths where you want to hide the header
+  const hideHeaderPaths = ['/dashboard']; 
 
   return !hideHeaderPaths.includes(location.pathname) ? <Header /> : null;
 }
